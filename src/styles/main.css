@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* @import url(./normalize.css); */
+@import './normalize.css';
+.page {
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  background-color: #F5F5F6;
+  padding: 15px;
+}
+
+.logo {
+  height: 24px;
+  width: 90px;
+  background-image: url(../Asset\ 1@3x\ 1.png);
+  background-repeat: no-repeat;
+}
+
+.enter-button {
+  border: none;
+  border-radius: 5px;
+  height: 33px;
+  width: 60px;
+  background-color: white;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navigation-list {
+  text-transform: uppercase;
+  display: flex;
+}
+
+.navigation-list :not(:first-child) {
+  margin-left: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+h1 {
+  text-align: left;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+h5 {
+  color: rgba(159, 159, 159, 1);
+  font-weight: 400;
+
+}
+
+.currency-converter {
+  display: flex;
+}
+
+.navigation-link {
+  color:rgba(149, 155, 164, 1);
+}
+
+.navigation-link:hover {
+  color: rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.buttons-panel {
+  display: flex;
+  color: rgba(198, 198, 198, 1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0,25);
+}
+
+.buttons-panel :first-child {
+  border-radius: 5px 0 0 5px;
+}
+.buttons-panel :last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.currency-view {
+  border: 1px solid #E5E5E5;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.currency-view-input {
+  width: 100%;
+  border: 0;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.currency-view-title {
+  margin-top: 20px;
+}
+
+.currency-button {
+  border: 1px solid #E5E5E5;
+  padding: 6px;
+  flex-grow: 1;
+  background-color: transparent;
+}
+
+select {
+  border: 1px solid #E5E5E5;
+  padding: 6px;
+}
+
+.converter-panel > :not(:first-child) {
+  margin-top: 20px;
+}
+
+/* .currency-button:hover {
+  background-color: rgba(131, 58, 224, 1);
+  color: white;
+} */
+/* .active-button {
+  background-color: rgba(131, 58, 224, 1);
+  color: white;
+} */
+
+.activate-button {
+  background-color: rgba(131, 58, 224, 1);
+  color: white;
+}
+
+.wrap-converter {
+  margin-top: 20px;
+}
+
+.converter-panel{
+  margin-top: 15px;
+}
+
+.switch-button {
+  background-image: url(../Group\ 5.png);
+  width: 40px;
+  height: 34px;
+  background-repeat: no-repeat;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 0;
+  background-color: transparent;
+  align-self: flex-end;
+  margin-bottom: 33px;
+}
+
+
+/* -------------------------------------------- */
+/*               working with API               */
+/* -------------------------------------------- */
+
+.loading {
+  /* display: flex; */
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  /* border: red 3px solid; */
+  height: 100%;
+  width: 100%;
+  background-color: rgba(149, 155, 164, 0.7);
+}
+
+.hidden {
+  display: none;
+}
+
+
+.loading-status {
+  text-align: center;
+  border: white 3px solid;
+  background-color: white;
+  height: 40px;
+  width: 100px;
+  padding: 9px;
+}
